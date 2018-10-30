@@ -10,11 +10,15 @@ class SlackApiWrapper
 
     data = HTTParty.get(url)
 
+    channel_list = []
+
     if data["channels"]
-      return data["channels"]
-    else
-      return []
+      data["channels"].each do |channel_data|
+        channel_list << create_channel(channel_data)
+      end
     end
+
+    return channel_list
   end
 
   def self.send_message(channel, message)
@@ -34,6 +38,20 @@ class SlackApiWrapper
     )
 
     return response.success?
+  end
+
+  private
+
+  def self.create_channel(api_params)
+    return Channel.new(
+      api_params["name"],
+      api_params["id"],
+      {
+        purpose: api_params["purpose"],
+        is_archived: api_params["is_archived"],
+        members: api_params["members"]
+      }
+    )
   end
 
 end
