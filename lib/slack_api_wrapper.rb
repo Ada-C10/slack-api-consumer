@@ -37,6 +37,8 @@ class SlackApiWrapper
       }
     )
 
+    # In this specific implementation, this method returns a boolean on if the post request was successful! Cool.
+    # Does it always have to be like this? Nope! I can return whatever I want!
     return response.success?
   end
 
