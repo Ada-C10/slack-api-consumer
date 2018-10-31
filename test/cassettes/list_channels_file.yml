@@ -1,0 +1,1392 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://slack.com/api/channels.list?exclude_archived=1&pretty=1&token=<SLACK_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4045'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 17:37:51 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - 82874647-e3b9-449b-902b-822d7182d41e
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      X-Accepted-Oauth-Scopes:
+      - channels:read,read
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-4r53
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e785d36fcfe1e6758d8c1a9a71445bbe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - qhYhdG8IrAZnFILMdPNbXD6wC3orRaA2Y_kOogs0NhKL-RlAL6utAg==
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+            "ok": true,
+            "channels": [
+                {
+                    "id": "CDGM58QLV",
+                    "name": "adoptsysquad",
+                    "is_channel": true,
+                    "created": 1539800364,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8471T4Z",
+                    "name_normalized": "adoptsysquad",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Talk about adoptsy!",
+                        "creator": "UB8471T4Z",
+                        "last_set": 1539800365
+                    },
+                    "previous_names": [],
+                    "num_members": 5
+                },
+                {
+                    "id": "CC68HF68M",
+                    "name": "beyond_the_wall",
+                    "is_channel": true,
+                    "created": 1533860121,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8EM39NY",
+                    "name_normalized": "beyond_the_wall",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB808782U",
+                        "UB8EM39NY",
+                        "UB8P7FYPL",
+                        "UB9PT0Z1D",
+                        "UBGHJ38F5"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "For wildling Adies and free folk from Everett who live north of north to organize study sessions, you know...beyond the wall",
+                        "creator": "UB8EM39NY",
+                        "last_set": 1533860435
+                    },
+                    "previous_names": [
+                        "beyond-the-wall",
+                        "beyond_the_wall"
+                    ],
+                    "num_members": 5
+                },
+                {
+                    "id": "CC4RH4UK1",
+                    "name": "caphill-cd-beaconhill",
+                    "is_channel": true,
+                    "created": 1533596572,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB84N6STB",
+                    "name_normalized": "caphill-cd-beaconhill",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB8720FFS",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8JJMEKE",
+                        "UB8L6VC1Y",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB9H563KQ",
+                        "UB9HUK91U",
+                        "UB9NFM82K",
+                        "UB9PT0Z1D",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBQUH5GR",
+                        "UBD8H7MFA",
+                        "UBGHJ38F5"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Folks who live in Capitol Hill, Central Disctrict, and Beacon Hill",
+                        "creator": "UB84N6STB",
+                        "last_set": 1533596572
+                    },
+                    "previous_names": [],
+                    "num_members": 22
+                },
+                {
+                    "id": "CBZHHQ04A",
+                    "name": "cs-fundamentals",
+                    "is_channel": true,
+                    "created": 1532979539,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9R18Z4Y",
+                    "name_normalized": "cs-fundamentals",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UAY04AU4B",
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P17H2L",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB8V1041X",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PK5FJB",
+                        "UB9PT0Z1D",
+                        "UB9R18Z4Y",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UB9VA1XDK",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBGHJ38F5",
+                        "UCGMPJYSG",
+                        "UCGQMV8NP"
+                    ],
+                    "topic": {
+                        "value": "<https:\/\/github.com\/Ada-Developers-Academy\/textbook-curriculum\/blob\/master\/04-cs-fundamentals\/readme.md#classroom---cohort-10>",
+                        "creator": "UB9R18Z4Y",
+                        "last_set": 1533588112
+                    },
+                    "purpose": {
+                        "value": "Facilitate cohort discussions on CS Fundamentals related topics",
+                        "creator": "UB9R18Z4Y",
+                        "last_set": 1532979540
+                    },
+                    "previous_names": [],
+                    "num_members": 52
+                },
+                {
+                    "id": "CDDJ09EHH",
+                    "name": "cs-study-group",
+                    "is_channel": true,
+                    "created": 1539464995,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UBBQUH5GR",
+                    "name_normalized": "cs-study-group",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Organize meetings for CS Fundamentals study group\/book club",
+                        "creator": "UBBQUH5GR",
+                        "last_set": 1539464995
+                    },
+                    "previous_names": [],
+                    "num_members": 20
+                },
+                {
+                    "id": "CDGFK00DQ",
+                    "name": "dandeelions",
+                    "is_channel": true,
+                    "created": 1539800603,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8JJMEKE",
+                    "name_normalized": "dandeelions",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "BESTY",
+                        "creator": "UB8JJMEKE",
+                        "last_set": 1539800604
+                    },
+                    "previous_names": [],
+                    "num_members": 5
+                },
+                {
+                    "id": "CDJJNUN2J",
+                    "name": "de-stressfrombetsy",
+                    "is_channel": true,
+                    "created": 1539877677,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9D9AHBM",
+                    "name_normalized": "de-stressfrombetsy",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "Is BETSY stressing you out? Wanna de-stress from BETSY!! then come join this group",
+                        "creator": "UB9D9AHBM",
+                        "last_set": 1539877820
+                    },
+                    "purpose": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "previous_names": [
+                        "betsy"
+                    ],
+                    "num_members": 23
+                },
+                {
+                    "id": "CCPDHSXAP",
+                    "name": "dumpster_fire",
+                    "is_channel": true,
+                    "created": 1536360465,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9UWLVBR",
+                    "name_normalized": "dumpster_fire",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8HV3ULB"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "18+ only, 24\/7 flame war \/ yaoi repository",
+                        "creator": "UB9UWLVBR",
+                        "last_set": 1539625583
+                    },
+                    "previous_names": [],
+                    "num_members": 23
+                },
+                {
+                    "id": "CDK8R2QUR",
+                    "name": "edges-api-testing",
+                    "is_channel": true,
+                    "created": 1540247077,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UAX7FMF4L",
+                    "name_normalized": "edges-api-testing",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "testing Slack API usage!",
+                        "creator": "UAX7FMF4L",
+                        "last_set": 1540247078
+                    },
+                    "previous_names": [],
+                    "num_members": 23
+                },
+                {
+                    "id": "CC67KJAD7",
+                    "name": "extracurriculars",
+                    "is_channel": true,
+                    "created": 1533939119,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UBAFZM7EZ",
+                    "name_normalized": "extracurriculars",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P7FYPL",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9NFM82K",
+                        "UB9PT0Z1D",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBGHJ38F5"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "HH, Activities, shenanigans",
+                        "creator": "UBAFZM7EZ",
+                        "last_set": 1533939120
+                    },
+                    "previous_names": [],
+                    "num_members": 42
+                },
+                {
+                    "id": "CCLNS7VHC",
+                    "name": "feeling_down_playlist",
+                    "is_channel": true,
+                    "created": 1535759135,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8HK7X2Q",
+                    "name_normalized": "feeling_down_playlist",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8HV3ULB"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Add your pick-me-up songs or songs you really want to share with the Ada Fam!",
+                        "creator": "UB8HK7X2Q",
+                        "last_set": 1536040207
+                    },
+                    "previous_names": [],
+                    "num_members": 47
+                },
+                {
+                    "id": "CARN12B8U",
+                    "name": "general",
+                    "is_channel": true,
+                    "created": 1526596294,
+                    "is_archived": false,
+                    "is_general": true,
+                    "unlinked": 0,
+                    "creator": "UARUQPG4S",
+                    "name_normalized": "general",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UARS48Y4B",
+                        "UARUQPG4S",
+                        "UAWLGSPEW",
+                        "UAX7FMF4L",
+                        "UAXR5BVCL",
+                        "UAXU6KQ6B",
+                        "UAY04AU4B",
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8HV3ULB",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P17H2L",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB8V1041X",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PK5FJB",
+                        "UB9PT0Z1D",
+                        "UB9R18Z4Y",
+                        "UB9SF79PX",
+                        "UB9UW9YJE",
+                        "UB9UWLVBR",
+                        "UB9VA1XDK",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBENE10TA",
+                        "UBG9D8PBR",
+                        "UBGHJ38F5",
+                        "UBGJYTREE",
+                        "UBM07C465",
+                        "UBP96FGTB",
+                        "UBR3M1BLN",
+                        "UBZNHN75X",
+                        "UC338HVH6",
+                        "UCG39PRHD",
+                        "UCG71TV5E",
+                        "UCGBM4DB3",
+                        "UCGMPJYSG",
+                        "UCGQMV8NP",
+                        "UCGRGPM4Y",
+                        "UCGTFUFJN",
+                        "UCH20SVUZ",
+                        "UCH2X894M",
+                        "UCH4XQ0LR",
+                        "UCJ0K6BF1",
+                        "UCJ0QSA7R",
+                        "UCJ1E018X",
+                        "UCJ1JFR4M",
+                        "UCJ5PHUK1",
+                        "UCJ98S7SA",
+                        "UCKCKPBT7",
+                        "UCPH19SNB",
+                        "UCQDLLVC3",
+                        "UCQR3JU10",
+                        "UCUHMLJP3",
+                        "UDNK98QDQ"
+                    ],
+                    "topic": {
+                        "value": "Company-wide announcements and work-based matters",
+                        "creator": "UARUQPG4S",
+                        "last_set": 1526596294
+                    },
+                    "purpose": {
+                        "value": "This channel is for workspace-wide communication and announcements. All members are in this channel.",
+                        "creator": "UARUQPG4S",
+                        "last_set": 1526596294
+                    },
+                    "previous_names": [],
+                    "num_members": 88
+                },
+                {
+                    "id": "CBR4C4L0N",
+                    "name": "merri",
+                    "is_channel": true,
+                    "created": 1531443676,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8JJMEKE",
+                    "name_normalized": "merri",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "previous_names": [],
+                    "num_members": 0
+                },
+                {
+                    "id": "CDHSC9X70",
+                    "name": "no-regretsy",
+                    "is_channel": true,
+                    "created": 1539800356,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9PT0Z1D",
+                    "name_normalized": "no-regretsy",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8HV3ULB"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "C10 Nodes bEtsy project",
+                        "creator": "UB9PT0Z1D",
+                        "last_set": 1539800357
+                    },
+                    "previous_names": [],
+                    "num_members": 6
+                },
+                {
+                    "id": "CDL4DV7GV",
+                    "name": "nodes-api-testing",
+                    "is_channel": true,
+                    "created": 1540253119,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UAX7FMF4L",
+                    "name_normalized": "nodes-api-testing",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8HV3ULB"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "testing Slack API usage!",
+                        "creator": "UAX7FMF4L",
+                        "last_set": 1540253120
+                    },
+                    "previous_names": [],
+                    "num_members": 19
+                },
+                {
+                    "id": "CCJKA1MGS",
+                    "name": "project_notifications",
+                    "is_channel": true,
+                    "created": 1535666219,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8HV3ULB",
+                    "name_normalized": "project_notifications",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UAX7FMF4L",
+                        "UAY04AU4B",
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8HV3ULB",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P17H2L",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB8V1041X",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PK5FJB",
+                        "UB9PT0Z1D",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UB9VA1XDK",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBGHJ38F5",
+                        "UBM07C465",
+                        "UC338HVH6",
+                        "UCG71TV5E",
+                        "UCH20SVUZ",
+                        "UCH4XQ0LR"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "A Channel to get notifications about each week\u2019s project",
+                        "creator": "UB8HV3ULB",
+                        "last_set": 1535666220
+                    },
+                    "previous_names": [],
+                    "num_members": 57
+                },
+                {
+                    "id": "CC80KN59B",
+                    "name": "pry",
+                    "is_channel": true,
+                    "created": 1534191606,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UBD8H7MFA",
+                    "name_normalized": "pry",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8471T4Z",
+                        "UB8Q4S3SP",
+                        "UB9H563KQ",
+                        "UB9UWLVBR",
+                        "UBAGTLCP4",
+                        "UBD8H7MFA"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "previous_names": [],
+                    "num_members": 6
+                },
+                {
+                    "id": "CARN12C2G",
+                    "name": "random",
+                    "is_channel": true,
+                    "created": 1526596294,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UARUQPG4S",
+                    "name_normalized": "random",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UARS48Y4B",
+                        "UARUQPG4S",
+                        "UAWLGSPEW",
+                        "UAX7FMF4L",
+                        "UAXR5BVCL",
+                        "UAXU6KQ6B",
+                        "UAY04AU4B",
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8HV3ULB",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P17H2L",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB8V1041X",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PK5FJB",
+                        "UB9PT0Z1D",
+                        "UB9R18Z4Y",
+                        "UB9SF79PX",
+                        "UB9UW9YJE",
+                        "UB9UWLVBR",
+                        "UB9VA1XDK",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBENE10TA",
+                        "UBG9D8PBR",
+                        "UBGHJ38F5",
+                        "UBGJYTREE",
+                        "UBM07C465",
+                        "UBP96FGTB",
+                        "UBR3M1BLN",
+                        "UBZNHN75X",
+                        "UC338HVH6",
+                        "UCG39PRHD",
+                        "UCG71TV5E",
+                        "UCGBM4DB3",
+                        "UCGQMV8NP",
+                        "UCGRGPM4Y",
+                        "UCH20SVUZ",
+                        "UCH2X894M",
+                        "UCH4XQ0LR",
+                        "UCJ0QSA7R",
+                        "UCJ1E018X",
+                        "UCJ1JFR4M",
+                        "UCJ5PHUK1",
+                        "UCJ98S7SA",
+                        "UCKCKPBT7",
+                        "UCPH19SNB",
+                        "UCQDLLVC3",
+                        "UCQR3JU10",
+                        "UCUHMLJP3",
+                        "UDNK98QDQ"
+                    ],
+                    "topic": {
+                        "value": "Non-work banter and water cooler conversation",
+                        "creator": "UARUQPG4S",
+                        "last_set": 1526596294
+                    },
+                    "purpose": {
+                        "value": "A place for non-work-related flimflam, faffing, hodge-podge or jibber-jabber you'd prefer to keep out of more focused work-related channels.",
+                        "creator": "UARUQPG4S",
+                        "last_set": 1526596294
+                    },
+                    "previous_names": [],
+                    "num_members": 85
+                },
+                {
+                    "id": "CC60EUD99",
+                    "name": "sbp",
+                    "is_channel": true,
+                    "created": 1533859896,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9PT0Z1D",
+                    "name_normalized": "sbp",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB84N6STB",
+                        "UB89W8SM6",
+                        "UB8EM39NY",
+                        "UB8HK7X2Q",
+                        "UB8JJMEKE",
+                        "UB8L6VC1Y",
+                        "UB9HZB26S",
+                        "UB9PT0Z1D",
+                        "UBAFZM7EZ",
+                        "UBAMNTP7X"
+                    ],
+                    "topic": {
+                        "value": "SEATTLE BOULDERING BUDDIES",
+                        "creator": "UB9PT0Z1D",
+                        "last_set": 1533870858
+                    },
+                    "purpose": {
+                        "value": "Seattle Bouldering Project!",
+                        "creator": "UB9PT0Z1D",
+                        "last_set": 1533859896
+                    },
+                    "previous_names": [],
+                    "num_members": 10
+                },
+                {
+                    "id": "CD44DE890",
+                    "name": "self-care-and-rest",
+                    "is_channel": true,
+                    "created": 1538342571,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB9PT0Z1D",
+                    "name_normalized": "self-care-and-rest",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": ":seedling: A lovely womb-like channel for building a culture of grit and *sustainability*",
+                        "creator": "UB9PT0Z1D",
+                        "last_set": 1538343001
+                    },
+                    "previous_names": [],
+                    "num_members": 3
+                },
+                {
+                    "id": "CDHL2H1FH",
+                    "name": "sovietski",
+                    "is_channel": true,
+                    "created": 1539809269,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB89W8SM6",
+                    "name_normalized": "sovietski",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "\"Win\" an election :flag-ru:",
+                        "creator": "UB89W8SM6",
+                        "last_set": 1539809672
+                    },
+                    "purpose": {
+                        "value": "For bEtsy project with team members Jackie, Jessie, Leanne and PM Devin. (NODES)",
+                        "creator": "UB8EYFG3E",
+                        "last_set": 1539809401
+                    },
+                    "previous_names": [],
+                    "num_members": 4
+                },
+                {
+                    "id": "CDGDYGB27",
+                    "name": "spagh-ettsi",
+                    "is_channel": true,
+                    "created": 1539804653,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB84N6STB",
+                    "name_normalized": "spagh-ettsi",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8HV3ULB"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "To make the best Spagh-ettsi app EVER!",
+                        "creator": "UB8HV3ULB",
+                        "last_set": 1539804910
+                    },
+                    "previous_names": [],
+                    "num_members": 6
+                },
+                {
+                    "id": "CC6DEPCNS",
+                    "name": "tas-and-tutors",
+                    "is_channel": true,
+                    "created": 1533749481,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UARUQPG4S",
+                    "name_normalized": "tas-and-tutors",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UARUQPG4S",
+                        "UAX7FMF4L",
+                        "UAXR5BVCL",
+                        "UAY04AU4B",
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8HV3ULB",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P17H2L",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB8V1041X",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HEGW8N",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PK5FJB",
+                        "UB9PT0Z1D",
+                        "UB9R18Z4Y",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UB9VA1XDK",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBD8H7MFA",
+                        "UBG9D8PBR",
+                        "UBGHJ38F5",
+                        "UBGJYTREE",
+                        "UBM07C465",
+                        "UBP96FGTB",
+                        "UBZNHN75X",
+                        "UC338HVH6",
+                        "UCG71TV5E",
+                        "UCGBM4DB3",
+                        "UCGMPJYSG",
+                        "UCGQMV8NP",
+                        "UCGRGPM4Y",
+                        "UCGTFUFJN",
+                        "UCH2X894M",
+                        "UCH4XQ0LR",
+                        "UCJ0K6BF1",
+                        "UCJ0QSA7R",
+                        "UCJ1JFR4M",
+                        "UCJ5PHUK1",
+                        "UCJ98S7SA",
+                        "UCKCKPBT7",
+                        "UCQR3JU10",
+                        "UCUHMLJP3",
+                        "UDNK98QDQ"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Information and announcements relating to our volunteer tutors and teaching assistants.",
+                        "creator": "UARUQPG4S",
+                        "last_set": 1533749519
+                    },
+                    "previous_names": [],
+                    "num_members": 77
+                },
+                {
+                    "id": "CC3A3TLJV",
+                    "name": "tech-events",
+                    "is_channel": true,
+                    "created": 1533608679,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB84AFE0G",
+                    "name_normalized": "tech-events",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": true,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB81QEATA",
+                        "UB8471T4Z",
+                        "UB84AFE0G",
+                        "UB84N6STB",
+                        "UB852T9FT",
+                        "UB864T3FT",
+                        "UB8720FFS",
+                        "UB89W8SM6",
+                        "UB8BMDP8R",
+                        "UB8EM39NY",
+                        "UB8EYFG3E",
+                        "UB8HA5DLK",
+                        "UB8HK7X2Q",
+                        "UB8HV3ULB",
+                        "UB8JJMEKE",
+                        "UB8KJDZDH",
+                        "UB8L6VC1Y",
+                        "UB8N9E6FM",
+                        "UB8P7FYPL",
+                        "UB8Q4S3SP",
+                        "UB8RMEJUV",
+                        "UB8TJQ0LU",
+                        "UB92396DT",
+                        "UB9D9AHBM",
+                        "UB9H563KQ",
+                        "UB9H9UNSW",
+                        "UB9HC872S",
+                        "UB9HUK91U",
+                        "UB9HZB26S",
+                        "UB9MW20JK",
+                        "UB9NFM82K",
+                        "UB9PT0Z1D",
+                        "UB9SF79PX",
+                        "UB9UWLVBR",
+                        "UBAFZM7EZ",
+                        "UBAGTLCP4",
+                        "UBAMNTP7X",
+                        "UBBJ8PSRM",
+                        "UBBQUH5GR",
+                        "UBC71PCFQ",
+                        "UBGHJ38F5"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "To share tech related events local and non-local to the area",
+                        "creator": "UB84AFE0G",
+                        "last_set": 1533608679
+                    },
+                    "previous_names": [],
+                    "num_members": 43
+                },
+                {
+                    "id": "CDRR5UQSE",
+                    "name": "test-api-channel",
+                    "is_channel": true,
+                    "created": 1540918228,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UC338HVH6",
+                    "name_normalized": "test-api-channel",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "Practicing API calls",
+                        "creator": "UC338HVH6",
+                        "last_set": 1540918229
+                    },
+                    "previous_names": [],
+                    "num_members": 19
+                },
+                {
+                    "id": "CC3K30L12",
+                    "name": "the-north",
+                    "is_channel": true,
+                    "created": 1533607134,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB89W8SM6",
+                    "name_normalized": "the-north",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB808782U",
+                        "UB80L9MEC",
+                        "UB89W8SM6",
+                        "UB8HA5DLK",
+                        "UB8TJQ0LU",
+                        "UB9HZB26S",
+                        "UBC71PCFQ",
+                        "UBGHJ38F5"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "",
+                        "last_set": 0
+                    },
+                    "purpose": {
+                        "value": "To organize meetups for folks in Fremont, Wallingford, Ballard, Greenwood, etc.",
+                        "creator": "UB89W8SM6",
+                        "last_set": 1533607134
+                    },
+                    "previous_names": [],
+                    "num_members": 8
+                },
+                {
+                    "id": "CC3T6FWS1",
+                    "name": "westeros",
+                    "is_channel": true,
+                    "created": 1533590805,
+                    "is_archived": false,
+                    "is_general": false,
+                    "unlinked": 0,
+                    "creator": "UB8P7FYPL",
+                    "name_normalized": "westeros",
+                    "is_shared": false,
+                    "is_org_shared": false,
+                    "is_member": false,
+                    "is_private": false,
+                    "is_mpim": false,
+                    "members": [
+                        "UB8471T4Z",
+                        "UB8BMDP8R",
+                        "UB8N9E6FM",
+                        "UB8P7FYPL",
+                        "UB9D9AHBM",
+                        "UBBJ8PSRM"
+                    ],
+                    "topic": {
+                        "value": "",
+                        "creator": "UB8P7FYPL",
+                        "last_set": 1533602055
+                    },
+                    "purpose": {
+                        "value": "West Seattle Addies (and everyone else interested) meet and hang out and study... in the far West \/ nowhere in this known world \/ not even on the map of Earthos",
+                        "creator": "UB8P7FYPL",
+                        "last_set": 1540937276
+                    },
+                    "previous_names": [
+                        "west-seattle"
+                    ],
+                    "num_members": 6
+                }
+            ]
+        }
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 17:37:51 GMT
+recorded_with: VCR 4.0.0

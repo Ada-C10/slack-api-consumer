@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=Happy%20Halloween&channel=nodes-api-testing&username=CheezItBot&icon_emoji=%3Acheezit%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 18:03:27 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - ee18e862-ea22-4b05-9ca9-8798e5f304ea
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-xiak
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 58b224f0fcba4846d5699ecad6c6829f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - B2ElEMxmwKtddJpmd_XBubkA6ejXhHt3GbGwJYwnfVZLoq0or_PYlA==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CDL4DV7GV","ts":"1541009007.002000","message":{"text":"Happy
+        Halloween","username":"CheezItBot","icons":{"emoji":":cheezit:"},"bot_id":"BDTN9CWS3","type":"message","subtype":"bot_message","ts":"1541009007.002000"}}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 18:03:27 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=THIS%20IS%20CHRIS%20IN%20TESTING&channel=nodes-api-testing&username=CheezItBot&icon_emoji=%3Acheezit%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 17:44:16 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - cc4852fd-1ad4-4cf6-9339-82e4cdc237e8
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-ontp
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cc939d428763f6bf98a05191227da596.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - seNx6ypgAPwOKD1NT2rg4ksdKGoNC_YPClH-6WT7U92wTRA8p1P_iQ==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CDL4DV7GV","ts":"1541007856.000800","message":{"text":"THIS
+        IS CHRIS IN TESTING","username":"CheezItBot","icons":{"emoji":":cheezit:"},"bot_id":"BDTN9CWS3","type":"message","subtype":"bot_message","ts":"1541007856.000800"}}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 17:44:16 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?token=<SLACK_TOKEN>
+    body:
+      encoding: UTF-8
+      string: text=THIS%20IS%20CHRIS%20IN%20TESTING&channel=bogus-api-testing&username=CheezItBot&icon_emoji=%3Acheezit%3A&as_user=false
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 31 Oct 2018 17:47:49 GMT
+      Server:
+      - Apache
+      X-Slack-Router:
+      - p
+      X-Slack-Req-Id:
+      - e45b9ab5-2dd9-4ed3-84f0-4184e3905007
+      X-Oauth-Scopes:
+      - identify,read,post,client,apps
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-pltk
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ba150248cd293ea895c35304503c9f27.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - S_wPDrwtr3x2Etl-qCn34Y6ijHFsF16PGnV3w0YGmKgwyEgWdhRWhw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: 
+  recorded_at: Wed, 31 Oct 2018 17:47:49 GMT
+recorded_with: VCR 4.0.0

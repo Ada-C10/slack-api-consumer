@@ -26,12 +26,12 @@ end
     body:  {
       "text" => "#{msg}",
       "channel" => "#{channel}",
-      "username" => "Devbot 20000",
-      "icon_emoji" => ":robot_face:",
+      "username" => "CheezItBot",
+      "icon_emoji" => ":cheezit:",
       "as_user" => "false"
     },
     :headers => { 'Content-Type' => 'application/x-www-form-urlencoded' })
-    return response.success?
+    return response['ok']
   end
 
   private

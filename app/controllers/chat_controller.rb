@@ -8,5 +8,7 @@ class ChatController < ApplicationController
   end
 
   def create
+    SlackApiWrapper.send_msg(params[:channel], params[:message])
+    redirect_to root_path
   end
 end
